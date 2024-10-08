@@ -30,6 +30,7 @@ const workerConfig = {
       name: 'Public - RSSHub',
       method: 'GET',
       target: 'https://rsshub.app',
+      timeout: 30000,
     },
     {
       id: 'Public - RSSHub Docs',
