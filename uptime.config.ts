@@ -84,6 +84,7 @@ const workerConfig = {
       name: 'Personal - Umami',
       method: 'GET',
       target: 'https://umami.diygod.dev',
+      expectedCodes: [200, 307]
     },
     {
       id: 'Personal - Suannai',
