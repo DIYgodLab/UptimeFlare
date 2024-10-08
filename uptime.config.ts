@@ -15,10 +15,9 @@ const workerConfig = {
   // passwordProtection: 'username:password',
   // Define all your monitors here
   monitors: [
-    // Example HTTP Monitor
     {
       // `id` should be unique, history will be kept if the `id` remains constant
-      id: 'xLog',
+      id: 'Public - xLog',
       // `name` is used at status page and callback message
       name: 'Public - xLog',
       // `method` should be a valid HTTP Method
@@ -26,17 +25,71 @@ const workerConfig = {
       // `target` is a valid URL
       target: 'https://xlog.app',
     },
-    // Example TCP Monitor
     {
-      id: 'test_tcp_monitor',
-      name: 'Example TCP Monitor',
-      // `method` should be `TCP_PING` for tcp monitors
-      method: 'TCP_PING',
-      // `target` should be `host:port` for tcp monitors
-      target: '1.2.3.4:22',
-      tooltip: 'My production server SSH',
-      statusPageLink: 'https://example.com',
-      timeout: 5000,
+      id: 'Public - RSSHub',
+      name: 'Public - RSSHub',
+      method: 'GET',
+      target: 'https://rsshub.app',
+    },
+    {
+      id: 'Public - RSSHub Docs',
+      name: 'Public - RSSHub Docs',
+      method: 'GET',
+      target: 'https://docs.rsshub.app',
+    },
+    {
+      id: 'Public - DPlayer Docs',
+      name: 'Public - DPlayer Docs',
+      method: 'GET',
+      target: 'https://dplayer.diygod.dev',
+    },
+    {
+      id: 'Public - APlayer Docs',
+      name: 'Public - APlayer Docs',
+      method: 'GET',
+      target: 'https://aplayer.js.org',
+    },
+    {
+      id: 'Personal - Blog',
+      name: 'Personal - Blog',
+      method: 'GET',
+      target: 'https://diygod.cc',
+    },
+    {
+      id: 'Personal - Fog Machine',
+      name: 'Personal - Fog Machine',
+      method: 'GET',
+      target: 'https://fogmachine.diygod.me',
+    },
+    {
+      id: 'Personal - NAS',
+      name: 'Personal - NAS',
+      method: 'GET',
+      target: 'https://nas.diygod.me',
+    },
+    {
+      id: 'Personal - NAS Status',
+      name: 'Personal - NAS Status',
+      method: 'GET',
+      target: 'https://nas-status.diygod.me',
+    },
+    {
+      id: 'Personal - RSSHub',
+      name: 'Personal - RSSHub',
+      method: 'GET',
+      target: 'https://rsshub.diygod.me',
+    },
+    {
+      id: 'Personal - Umami',
+      name: 'Personal - Umami',
+      method: 'GET',
+      target: 'https://umami.diygod.dev',
+    },
+    {
+      id: 'Personal - Suannai',
+      name: 'Personal - Suannai',
+      method: 'GET',
+      target: 'https://suannai.cat',
     },
   ],
   notification: {
